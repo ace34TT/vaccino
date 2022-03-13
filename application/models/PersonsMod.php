@@ -1,25 +1,14 @@
 <?php
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-class DoseResponseMod extends CI_Model
+class PersonsMod extends CI_Model
 {
-    public  function getDoseResponse()
+    public  function getNonVaccine()
     {
         $query = $this->db->query('select * from viewReponseVaccin Group by dose_rquestsId');
         return $query->result_array();
     }
 
-    public  function getDoseResponseHistoriques($dose_rquestsId)
-    {
-        $query = $this->db->query('select * from viewReponseVaccin where dose_rquestsId='.$dose_rquestsId);
-        return $query->result_array();
-    }
-
-    public  function getRecuReste()
-    {
-        $query = $this->db->query('select sum(dose_responsesQuantity) AS recu , (dose_rquestsQuantity-sum(dose_responsesQuantity)) AS reste from viewReponseVaccin Group by dose_rquestsId');
-        return $query->result_array();
-    }
 
    /* public  function getFicheDevis($idPreavis)
     {   $where ="";

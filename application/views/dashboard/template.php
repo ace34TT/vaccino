@@ -294,6 +294,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo base_url() ?>/ControllerDoseRequest/listDoseRequest">dose Request</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo base_url() ?>/ControllerDoseResponse/listDoseResponse">dose response</a>
+                                </li>
                             </ul>
                         </div>
                     </li>
