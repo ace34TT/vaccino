@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="<?php base_url() ?>assets/css/vertical-layout-light/style.css" />
     <!-- endinject -->
     <link rel="shortcut icon" href="<?php base_url() ?>assets/images/favicon.png" />
+    <?= $links ?>
 </head>
 
 <body>
@@ -339,6 +340,7 @@
     <!-- Custom js for this page-->
     <script src="<?= base_url() ?> assets/js/dashboard.js"></script>
     <!-- End custom js for this page-->
+    <?= $scripts ?>
 </body>
 
 </html>
