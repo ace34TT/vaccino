@@ -24,11 +24,10 @@ class ControllerDoseRequest extends CI_Controller
     public function listDoseRequest()
     {
         $this->load->helper('url');
-        $this->load->model('DevisModel');
-        $this->load->model('ClientsModel');
-        $data['clients']=$this->ClientsModel->getClients();
-	    	$data['devis']=$this->DevisModel->getDevis();
-        $this->load->view('devis',$data);
+        $this->load->model('DoseRequestMod');
+      
+        $data['doseRequest']=$this->DoseRequestMod->getDoseRequest();
+        $this->load->view('doseRequest',$data);
     }
 
     
