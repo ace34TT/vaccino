@@ -292,10 +292,13 @@
                                     <a class="nav-link" href="pages/ui-features/typography.html">Typography</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo base_url() ?>/ControllerDoseRequest/listDoseRequest">dose Request</a>
+                                    <a class="nav-link" href="<?php echo site_url("/ControllerDoseRequest/listDoseRequest") ?>">dose Request</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo base_url() ?>/ControllerDoseResponse/listDoseResponse">dose response</a>
+                                    <a class="nav-link" href="<?php echo site_url("/ControllerDoseResponse/listDoseResponse") ?>">dose response</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url("/ControllerDoseResponse/listDoseResponse") ?>">dose response</a>
                                 </li>
                             </ul>
                         </div>
