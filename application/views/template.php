@@ -291,6 +291,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="pages/ui-features/typography.html">Typography</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url("ControllerDoseRequest/listDoseRequest") ?>">dose Request</a>
+                                </li>
                             </ul>
                         </div>
                     </li>

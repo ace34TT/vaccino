@@ -25,7 +25,6 @@ class ControllerDoseRequest extends CI_Controller
     {
         $this->load->helper('url');
         $this->load->model('DoseRequestMod');
-      
         $data['doseRequest']=$this->DoseRequestMod->getDoseRequest();
         $this->load->view('doseRequest',$data);
     }
