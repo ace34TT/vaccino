@@ -1,12 +1,49 @@
-CREATE VIEW viewDevis AS
+/*dose_rquests;
++----+------------+---------+------------+----------+
+| id | date       | user_id | vaccine_id | quantity |
+
+ vaccines;
++----+--------------+
+| id | nom          |
+
+
+
+users;
++----+------------------+----------+---------+-----------+
+| id | email            | password | role_id | person_id |
+
+roles;
++----+---------+
+| id | nom     |
+
+
+persons;
++----+-----------------+-----------+---------------+--------------+--------+
+| id | firstname       | lastname  | date_of_birth | fokontany_id | cin    |
+
+
+
+ drop view viewDemandeVaccin;
+*/
+
+
+CREATE VIEW viewDemandeVaccin AS
 SELECT
-      clients.id As  clientsId,
-      clients.nom AS  clientsNom,
-      clients.adresse As  clientsAdresse ,
-      clients.contact AS  clientsContact,
-      devis.id AS  devisId ,
-      devis.date AS  devisDate ,
-      devis.status AS   devisStatus
-FROM clients
-    INNER JOIN devis ON devis.idClient = clients.id
+      dose_rquests.id As  dose_rquestsId,
+      dose_rquests.date AS  dose_rquestsDate,
+      dose_rquests.quantity As  dose_rquestsQuantity ,
+      vaccines.id AS  vaccinesId,
+      vaccines.nom AS vaccinesNom,
+      users.id AS usersId,
+      users.email AS  usersEmail,
+      roles.id AS rolesId,
+      roles.nom AS rolesNom,
+      persons.id AS personsId,
+       persons.firstname AS firstname,
+        persons.lastname AS lastname
+FROM dose_rquests
+    INNER JOIN vaccines ON vaccines.id = dose_rquests.vaccine_id
+    INNER JOIN users ON  users.id = dose_rquests.user_id
+    INNER JOIN roles ON  roles.id = users.role_id
+    INNER JOIN persons ON  persons.id = users.person_id
   ;
