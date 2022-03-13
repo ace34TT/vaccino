@@ -40,10 +40,13 @@ SELECT
       roles.nom AS rolesNom,
       persons.id AS personsId,
        persons.firstname AS firstname,
-        persons.lastname AS lastname
+        persons.lastname AS lastname,
+        fokontanys.id AS fokontanysId,
+         fokontanys.nom AS  fokontanysNom
 FROM dose_rquests
     INNER JOIN vaccines ON vaccines.id = dose_rquests.vaccine_id
     INNER JOIN users ON  users.id = dose_rquests.user_id
     INNER JOIN roles ON  roles.id = users.role_id
     INNER JOIN persons ON  persons.id = users.person_id
+    INNER JOIN fokontanys ON fokontanys.id = persons.fokontany_id
   ;
