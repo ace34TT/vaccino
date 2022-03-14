@@ -16,7 +16,7 @@
   <?php //var_dump($recuReste);
 
   ?>
-  <h1>List Reponse <?php //echo $idPreavis
+  <h1> Personne non vaccine <?php //echo $idPreavis
                     ?></h1>
   <table class="table">
     <thead>
@@ -31,7 +31,8 @@
       </tr>
     </thead>
     <tbody>
-      <?php for ($i = 0; $i < count($doseResponse); $i++) { ?>
+      <?php 
+      /*for ($i = 0; $i < count($doseResponse); $i++) { ?>
         <tr>
           <th scope="row"><?php echo $doseResponse[$i]['dose_rquestsId'] ?></th>
           <td><?php echo $doseResponse[$i]['firstname'] . " " . $doseResponse[$i]['lastname'] ?></td>
@@ -55,7 +56,7 @@
       </form>
     </div>
   </table>
-  <?php ?>
+  <?php */?>
 </body>
 
 </html>

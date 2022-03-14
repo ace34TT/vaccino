@@ -8,10 +8,14 @@ class PersonsMod extends CI_Model
         $query = $this->db->query('select * from viewReponseVaccin Group by dose_rquestsId');
         return $query->result_array();
     }
-    
+
     public  function insertPersons($data)
     {
         $this->db->insert("persons", $data);
+    }
+    public  function insertRappel($data)
+    {
+        $this->db->insert("rappel", $data);
     }
     
    /* public  function getFicheDevis($idPreavis)

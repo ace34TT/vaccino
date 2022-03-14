@@ -304,7 +304,7 @@
                                     <a class="nav-link" href="<?php echo site_url("/ControllerDoseResponse/listDoseResponse") ?>">dose response</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url("/ControllerDoseResponse/listDoseResponse") ?>">personne non vao</a>
+                                    <a class="nav-link" href="<?php echo site_url("/ControllerDoseResponse/listDoseResponse") ?>">personne nonVaccine</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo site_url("/ControllerFormulaire/faireVaccin") ?>">formulaire de vaccination</a>

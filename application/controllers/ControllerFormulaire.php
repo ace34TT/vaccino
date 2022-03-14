@@ -59,5 +59,9 @@ class ControllerFormulaire extends CI_Controller
     var_dump("reussi");
     var_dump($insert);
     }
+    
+    public function insertRappel(){
+
+    }
 
 }
