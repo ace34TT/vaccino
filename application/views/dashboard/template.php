@@ -292,13 +292,25 @@
                                     <a class="nav-link" href="pages/ui-features/typography.html">Typography</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url("/ControllerDoseRequest/listDoseRequest") ?>">dose Request</a>
+                                    <a class="nav-link" href="<?php echo site_url("/ControllerFormulaire/pageLogin") ?>"> login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url("/ControllerDoseRequest/listDoseRequest") ?>"> list doseRequest</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url("/ControllerDoseRequest/pageInsertDoseRequest") ?>"> insert doseRequest</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo site_url("/ControllerDoseResponse/listDoseResponse") ?>">dose response</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url("/ControllerDoseResponse/listDoseResponse") ?>">dose response</a>
+                                    <a class="nav-link" href="<?php echo site_url("/ControllerDoseResponse/listDoseResponse") ?>">personne non vao</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url("/ControllerFormulaire/faireVaccin") ?>">formulaire de vaccination</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url("/ControllerFormulaire/enregistrementVaccin") ?>">Enregistrement</a>
                                 </li>
                             </ul>
                         </div>

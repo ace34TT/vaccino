@@ -9,6 +9,11 @@ class DoseRequestMod extends CI_Model
         return $query->result_array();
     }
 
+    public  function insertDoseRequeat($data)
+    {
+        $this->db->insert("dose_rquests", $data);
+    }
+
    /* public  function getFicheDevis($idPreavis)
     {   $where ="";
         if ($idPreavis!="") {
