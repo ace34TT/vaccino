@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="<?php base_url() ?>assets/css/vertical-layout-light/style.css" />
     <!-- endinject -->
     <link rel="shortcut icon" href="<?php base_url() ?>assets/images/favicon.png" />
-    <?= $links ?>
 </head>
 
 <body>
@@ -109,7 +108,7 @@
                                 <div class="form-group d-flex">
                                     <input type="text" class="form-control todo-list-input" placeholder="Add To-do" />
                                     <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">
-                                        Add
+                                     
                                     </button>
                                 </div>
                             </form>
@@ -292,7 +291,27 @@
                                     <a class="nav-link" href="pages/ui-features/typography.html">Typography</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo site_url("ControllerDoseRequest/listDoseRequest") ?>">dose Request</a>
+                                    <a class="nav-link" href="<?php echo site_url("/ControllerFormulaire/pageLogin") ?>"> login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url("/ControllerDoseRequest/listDoseRequest") ?>"> list doseRequest</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url("/ControllerDoseRequest/pageInsertDoseRequest") ?>"> insert doseRequest</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url("/ControllerDoseResponse/listDoseResponse") ?>">dose response</a>
+                               
+                               
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url("/ControllerPersons/pageNonVacciner") ?>">personne nonVaccine</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url("/ControllerFormulaire/faireVaccin") ?>">formulaire de vaccination</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo site_url("/ControllerFormulaire/enregistrementVaccin") ?>">Enregistrement</a>
                                 </li>
                             </ul>
                         </div>
@@ -301,9 +320,9 @@
             </nav>
             <!-- partial -->
             <div class="main-panel">
-                <div class="content-wrapper">
-                    <?= $content ?>
-                </div>
+               <div class="container-fluid">
+                        <?= include($page) ?>
+                    </div>
                 <!-- content-wrapper ends -->
                 <!-- partial:partials/_footer.html -->
                 <footer class="footer">
@@ -343,7 +362,6 @@
     <!-- Custom js for this page-->
     <script src="<?= base_url() ?> assets/js/dashboard.js"></script>
     <!-- End custom js for this page-->
-    <?= $scripts ?>
 </body>
 
 </html>

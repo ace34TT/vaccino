@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html>
-<link href="<?php echo base_url() ?>/assets/css/bootstrap.min.css" rel="stylesheet">
-
-<head>
-  <title>403 Forbidden</title>
-  <style>
-    .special-card {
-      background-color: rgba(0, 0, 0, 2);
-      opacity: .7;
-    }
-  </style>
-</head>
-<body>
   <div style="margin-left: 20%;">
     <h1> Login  </h1>
     <div class="card" style="width: 40%;">
@@ -33,5 +19,3 @@
       </div>
     </div>
   </div>
-</body>
-</html>
